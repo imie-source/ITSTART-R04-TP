@@ -1,0 +1,7 @@
+<h1 style="text-align: center;">Profil de <?= $id ?></h1>
+<img src="<?= $urlImageProfil ?>" style="width: 300px; margin: auto; display: block;"/>
+<form action="./?action=uploadProfil" method="POST" enctype="multipart/form-data">
+	<p>Sélectionnez une nouvelle image pour votre profil
+	<input type="file" name="fileUp" /></p>
+	<input type="submit" value="Uploadez !" />
+</form>

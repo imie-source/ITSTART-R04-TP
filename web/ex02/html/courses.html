@@ -1,0 +1,19 @@
+<h1>Liste des courses de la journée du : <?= $lesCourses["date"] ?></h1>
+<table id="courses">
+	<thead>
+		<tr>
+			<th>Heure</th>
+			<th>Nom de la course</th>
+			<th>Type de course</th>
+			<th>Nb de participants</th>
+		</tr>
+	</thead>
+	<?php foreach($lesCourses["courses"] as $c): ?>
+	<tr>
+		<td><?= $c["heure"] ?></td>
+		<td><?= $c["nom"] ?></td>
+		<td><?= $c["type"] ?></td>
+		<td><?= $c["nb"] ?></td>
+	</tr>
+	<?php endforeach; ?>
+</table>	
